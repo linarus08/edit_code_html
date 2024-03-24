@@ -4,7 +4,7 @@ import glob
 
 
 def change_encoding(path):
-    # for HEX html CRLC
+    # for HEX html CRLIC
     for (dir_path, dir_names, file_names) in os.walk(path):
         for file in glob.glob('**/*.html', recursive=True):
             with open(file, 'r', encoding='cp1251') as f:
